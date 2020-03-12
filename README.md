@@ -7,6 +7,8 @@ cd mc_followup
 
 cp metagenome_predictions_L3.q2.txt ~/software/
 
+head -1 metagenome_predictions_L3.q2.txt | sed 's/\t/\n/g' > osrp.sample.id.order.txt
+
 cd ~/software/humann-0.99/
 
 cd /data/valenzur/Shukla_microbiome_seq/mc_followup
