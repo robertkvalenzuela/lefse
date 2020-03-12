@@ -34,7 +34,7 @@ rev metagenome_predictions_L3.q2.txt | cut -f2- | rev | sed 's/ /_/g' > metageno
 cat osrp.classes.ordered.row.txt metagenome_predictions_L3.q2.edited.txt > metagenome_predictions_L3.q2.edited2.txt
 
 vim metagenome_predictions_L3.q2.edited2.txt
-
+# LEFSE
 /home/valenzur/software/nsegata-lefse-82605a2ae7b7/format_input.py metagenome_predictions_L3.q2.edited2.txt metagenome_predictions_L3.q2.edited2.4lefse.u4.lefse -c 1 -u 4
 
 /home/valenzur/software/nsegata-lefse-82605a2ae7b7/run_lefse.py  metagenome_predictions_L3.q2.edited2.4lefse.u4.lefse shed.picrust.humann.4lefse.u4.lefse.out -l 4
